@@ -6,12 +6,12 @@ export const CreateTodo = (props) => {
   return (
     <div className="create-todo">
       <input
-        placeholder="ここにTODOを入力"
+        placeholder="input todo..."
         value={val}
         onChange={onChange}
       ></input>
-      <button onClick={onClick}>追加</button>
-      {validationFlag && <p style={{ color: "red" }}>文字を入力してください</p>}
+      <button onClick={onClick}>Add</button>
+      {validationFlag && <p style={{ color: "red" }}>Please input todo</p>}
       <p> {val} </p>
     </div>
   );
